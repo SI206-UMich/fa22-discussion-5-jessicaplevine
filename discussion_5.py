@@ -81,6 +81,8 @@ class TestAllMethods(unittest.TestCase):
 		self.assertEqual(a_count, 1)
 		abcabc_count = count_a('abcabc')
 		self.assertEqual(abcabc_count, 2)
+		zero_count = count_a('zero')
+		self.assertEqual(zero_count, 0)
 
 
 	## Check to see whether you can add an item to the warehouse
